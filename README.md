@@ -1,1 +1,1 @@
-# ilgiz-github-repo
+# android-java-ble-client
