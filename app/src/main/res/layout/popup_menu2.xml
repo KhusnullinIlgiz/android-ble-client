@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="220dp"
+    android:padding="10dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/close_popup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/circle_background"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Box2 Settings"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="55dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/temperature"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"/>
+
+
+    <EditText android:inputType="numberDecimal"
+        android:id="@+id/temperatureEditText"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorSecondary"
+        android:background="@color/white"
+        android:textColorHint="@color/colorSecondary"/>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:background="@drawable/rectanglered"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="140dp"/>
+
+</FrameLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/group2" android:scaleType="fitXY"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <GridLayout
+            android:layout_marginTop="150dp"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:onClick="box1"
+                        android:src="@drawable/box"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#FFFFFF"
+                        android:text="Box 1"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ></TextView>
+
+                </LinearLayout>
+                <!--app:cardBackgroundColor="#FFFFFF"  white board background-->
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="0"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:onClick="box2"
+                    android:src="@drawable/box"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Box 2"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>
+<ImageView
+    android:layout_marginTop="340dp"
+    android:src="@drawable/dark2"
+    android:layout_width="match_parent"
+    android:scaleType="fitXY"
+    android:layout_height="300dp"/>
+<TextView
+    android:id="@+id/eventTableTextView"
+    android:layout_marginTop="340dp"
+    android:layout_marginLeft="100dp"
+    android:textColor="#FFFFFF"
+    android:text="Event Table:"
+    android:textSize="18dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<ImageView
+    android:id="@+id/greenImageView1"
+    android:layout_marginTop="310dp"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/green"
+    android:layout_width="25dp"
+    android:layout_height="25dp"/>
+
+<ImageView
+    android:id="@+id/greenImageView2"
+    android:layout_marginTop="310dp"
+    android:layout_marginLeft="195dp"
+    android:src="@drawable/green"
+    android:layout_width="25dp"
+    android:layout_height="25dp"/>
+
+<ImageView
+    android:id="@+id/redImageView1"
+    android:layout_marginTop="310dp"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/red"
+    android:layout_width="25dp"
+    android:layout_height="25dp"/>
+
+<ImageView
+    android:id="@+id/redImageView2"
+    android:layout_marginTop="310dp"
+    android:layout_marginLeft="195dp"
+    android:src="@drawable/red"
+    android:layout_width="25dp"
+    android:layout_height="25dp"/>
+<ListView
+    android:id="@+id/boxDataListView"
+    android:layout_marginTop="380dp"
+    android:layout_width="match_parent"
+    android:layout_height="255dp">
+
+</ListView>
+
+<TextView
+    android:text="Gateway:"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="180dp"
+    android:textColor="#FFFFFF"
+    android:textSize="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<TextView
+    android:text="Status:"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="180dp"
+    android:textColor="#FFFFFF"
+    android:textSize="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<TextView
+    android:id="@+id/gatewayNameTextView"
+    android:text="Unknown"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="240dp"
+    android:textColor="#FFFFFF"
+    android:textSize="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<TextView
+    android:id="@+id/statusTextView"
+    android:text="Not Connected"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="240dp"
+    android:textColor="#FFFFFF"
+    android:textSize="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/startStopButton"
+        android:text="None"
+        android:textSize="10dp"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="175dp"
+        />
+
+
+<ImageView
+    android:onClick="refresh"
+    android:id="@+id/refreshImageView"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="330dp"
+    android:src="@drawable/loop"
+    android:layout_width="25dp"
+    android:layout_height="25dp"/>
+
+    <ImageView
+        android:id="@+id/tempImageView1"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="11dp"
+        android:src="@drawable/temperature"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+    <ImageView
+        android:id="@+id/tempImageView2"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="193dp"
+        android:src="@drawable/temperature"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <ImageView
+        android:id="@+id/lightImageView1"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="11dp"
+        android:src="@drawable/light"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+    <ImageView
+        android:id="@+id/lightImageView2"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="192dp"
+        android:src="@drawable/light"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <ImageView
+        android:id="@+id/movedImageView1"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="13dp"
+        android:src="@drawable/moved"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+    <ImageView
+        android:id="@+id/movedImageView2"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="194dp"
+        android:src="@drawable/moved"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/tempTextView1"
+        android:text="X 0"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="36dp"
+        android:textColor="#FF0000"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tempTextView2"
+        android:text="X 0"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="216dp"
+        android:textColor="#FF0000"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/lightTextView1"
+        android:text="X 0"
+        android:layout_marginTop="214dp"
+        android:layout_marginLeft="36dp"
+        android:textColor="#FF0000"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/lightTextView2"
+        android:text="X 0"
+        android:layout_marginTop="214dp"
+        android:layout_marginLeft="216dp"
+        android:textColor="#FF0000"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/movedTextView1"
+        android:text="X 0"
+        android:layout_marginTop="251dp"
+        android:layout_marginLeft="36dp"
+        android:textColor="#FF0000"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/movedTextView2"
+        android:text="X 0"
+        android:layout_marginTop="251dp"
+        android:layout_marginLeft="216dp"
+        android:textColor="#FF0000"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/settingsImageView1"
+        android:onClick="popup1"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="140dp"
+        android:src="@drawable/gear"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <ImageView
+        android:id="@+id/settingsImageView2"
+        android:onClick="popup2"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="320dp"
+        android:src="@drawable/gear"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <TextView
+        android:id="@+id/thresholdTemperatureTextView1"
+        android:layout_marginTop="268dp"
+        android:text="0"
+        android:layout_marginLeft="130dp"
+        android:textColor="#00FF00"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/thresholdTemperatureTextView2"
+        android:layout_marginTop="268dp"
+        android:text="0"
+        android:layout_marginLeft="310dp"
+        android:textColor="#00FF00"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</FrameLayout>
