@@ -1,1 +1,1 @@
-# android-java-ble-client
+# android-java-ble-client on Zebra industrial phone
